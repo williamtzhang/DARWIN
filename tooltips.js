@@ -254,7 +254,7 @@ parentdiv.addEventListener("mouseover", function (e){
 
             case "Hexapoda":
                 _id = "Hexapodatip";
-                _html = "These creatures have 3 pairs of legs, unlike other arthropods, who usually have more. These species can be sizes of .5 mm to over 300 mm long. Existed 411 million years ago.";
+                _html = "These creatures have 3 pairs of legs, unlike other arthropods, who usually have more. These species can be sizes of 0.5 mm to over 300 mm long. Existed 411 million years ago.";
                 _width = 300;
                 break;
 
@@ -468,6 +468,12 @@ parentdiv.addEventListener("mouseover", function (e){
                 _width = 300;
                 break;
 
+            case "Cyclostomata":
+                _id = "Cyclostomatatip";
+                _html = "These jawless fish have round mouths that have teeth like structures positioned inside. Some are filter-feeders, while others are parasitic, however, they mostly eat already dead meat. Existed 420 million years ago.";
+                _width = 300;
+                break;
+
             case "Gnathostomata":
                 _id = "Gnathostomatatip";
                 _html = "These creatures account for 99% of all vertebrates and have around 60,000 species. In addition to jaws, they also have true teeth, even-numbered appendages, and development of their cellular anatomy. Existed 445 million years ago.";
@@ -511,7 +517,7 @@ parentdiv.addEventListener("mouseover", function (e){
                 break;
 
             case "Neopterygii":
-                _id = "Neopterygii";
+                _id = "Neopterygiitip";
                 _html = "These fish did better than their ancestors due to their lighter skeletons and scales and their more powerful and efficient jaws. Along with their superior movement of their dorsal and anal fins, these fish were able to dominate the waters. Existed 251 million years ago.";
                 _width = 300;
                 break;
@@ -1020,8 +1026,8 @@ parentdiv.addEventListener("mouseover", function (e){
                 _width = 300;
                 break;
 
-            case "Feliformiatip":
-                _id = "Feliformia";
+            case "Feliformia":
+                _id = "Feliformiatip";
                 _html = "These carnivorous animals are “cat-like”, with shorter snouts, less teeth, and have more arboreal species. The main difference with the other group of carnivores, Caniformes, is how their inner ear is arranged, with Feliformes having two and Caniformes having one. Existed 40 million years ago.";
                 _width = 300;
                 break;
