@@ -1,5 +1,7 @@
 body{
     background-image: url(back.jpg);
+
+    overflow: hidden;
 }
 
 a:link {

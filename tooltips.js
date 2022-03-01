@@ -23,11 +23,21 @@ function showTooltip(obj, id, html, width, height){
         const rect = obj.getBoundingClientRect();
 
         if(rect.bottom > 500) {
-            tooltipBox.style.left = left+"px";
-            tooltipBox.style.bottom = 40+"px";
+            if(rect.right > 1200){
+                tooltipBox.style.right = 10 + "px";
+                tooltipBox.style.top = 40 + "px";
+            } else {
+                tooltipBox.style.left = left + "px";
+                tooltipBox.style.top = 40 + "px";
+            }
         } else {
-            tooltipBox.style.left = left+"px";
-            tooltipBox.style.top = top+"px";
+            if(rect.right > 1200){
+                tooltipBox.style.right = 10 + "px";
+                tooltipBox.style.top = top + "px";
+            } else {
+                tooltipBox.style.left = left + "px";
+                tooltipBox.style.top = top + "px";
+            }
         }
 
         // tooltipBox.style.left = left+"px";
