@@ -22,16 +22,16 @@ function showTooltip(obj, id, html, width, height){
 
         const rect = obj.getBoundingClientRect();
 
-        if(rect.bottom > 500) {
-            if(rect.right > 1200){
+        if(rect.bottom > 450) {
+            if(rect.right > 900){
                 tooltipBox.style.right = 10 + "px";
-                tooltipBox.style.top = 40 + "px";
+                tooltipBox.style.bottom = 10 + "px";
             } else {
                 tooltipBox.style.left = left + "px";
-                tooltipBox.style.top = 40 + "px";
+                tooltipBox.style.bottom = 40 + "px";
             }
         } else {
-            if(rect.right > 1200){
+            if(rect.right > 900){
                 tooltipBox.style.right = 10 + "px";
                 tooltipBox.style.top = top + "px";
             } else {
@@ -194,7 +194,7 @@ parentdiv.addEventListener("mouseover", function (e){
 
             case "Xiphosura":
                 _id = "Xiphosuratip";
-                _html = "; These creatures have barely changed over the years, the most notable being their abdomen being fused into one unit. These species have 4 eyes and 6 pairs of legs, the first 5 ending in pincers. Existed 445 million years ago.";
+                _html = "These creatures have barely changed over the years, the most notable being their abdomen being fused into one unit. These species have 4 eyes and 6 pairs of legs, the first 5 ending in pincers. Existed 445 million years ago.";
                 _width = 300;
                 break;
 
