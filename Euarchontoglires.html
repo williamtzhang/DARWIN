@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Euarchontoglires')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Euarchontoglires">
+
+        <div class="arrow-1-c">
+            <a href="Eutheria.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class = "node-1-c">
+            <h3><a class="tooltip" id="Euarchontoglires">Euarchontoglires</a></h3>
+            <p>
+                Common DNA Sequence
+            </p>
+        </div>
+
+        <div class="node-2-b">
+            <h3><a class="tooltip"  id="Euarchonta">Euarchonta</a></h3>
+            <p style = "font-size: 0.9vw;">
+                Common DNA Sequence
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip" id="Primates">Primates</a></h3>
+            <p>
+                Monkey-Like
+            </p>
+        </div>
+
+        <div class="node-2-d" style = "width: 200px;">
+            <h3><a class="tooltip" id="Glires">Glires</a></h3>
+            <p>
+                Constantly Growing Incisors
+            </p>
+        </div>
+
+        <div class="node-3-e">
+            <h3><a class="tooltip" id="Lagomorpha">Lagomorpha</a></h3>
+            <p>
+               Rabbits, Hares, Pikas
+            </p>
+        </div>
+
+        <div class="node-4-d">
+            <h3><a class="tooltip" id="Rodentia">Rodentia</a></h3>
+            <p>
+                Rodents
+            </p>
+        </div>
+
+        <div class="node-4-e" style = "width: 13vw; left: 83vw;">
+            <h3><a class="tooltip" id="Castorimorpha">Castorimorpha</a></h3>
+            <p style = "font-size: 0.9vw;">
+                Beavers, Gophers, Kangaroo Rats
+            </p>
+        </div>
+
+        <div class="node-4-c" style = "width: 16vw; left: 41vw;">
+            <h3><a class="tooltip" id="Sciuromorpha">Sciuromorpha</a></h3>
+            <p>
+                Squirrels, Chipmunks, Flying Squirrels
+            </p>
+        </div>
+
+        <div class="node-5-c" style = "width: 16vw; left: 41vw;">
+            <h3><a class="tooltip" id="Hystricomorpha">Hystricomorpha</a></h3>
+            <p>
+                Porcupines, Capybaras, Chinchillas
+            </p>
+        </div>
+
+        <div class="node-5-d" style = "width: 14vw; left: 63vw;">
+            <h3><a class="tooltip" id="Myomorpha">Myomorpha</a></h3>
+            <p>
+                Mice, Rats, Voles, Lemmings
+            </p>
+        </div>
+
+        <div class="arrow-4-b">
+            <a href="Primates.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-Euarchontoglires", "node-1-c", "node-2-b");
+            connectNode("page-Euarchontoglires", "node-2-b", "node-3-b");
+            connectNode("page-Euarchontoglires", "node-1-c", "node-2-d");
+            connectNode("page-Euarchontoglires", "node-2-d", "node-3-e");
+            connectNode("page-Euarchontoglires", "node-2-d", "node-4-d");
+//            connectNode("page-Euarchontoglires", "node-4-c", "node-4-e");
+//            connectNode("page-Euarchontoglires", "node-4-d", "node-4-e");
+//            connectNode("page-Euarchontoglires", "node-4-d", "node-5-c");
+            connectNode("page-Euarchontoglires", "node-4-d", "node-5-d");
+        </script>
+
+        <div style = 'width: 0.35vw; height: 8vw; position: absolute; top: 26.4vw; left: 60.7vw; transform: rotate(65deg); background-color: green;'></div>
+        <div style = 'width: 5.2vw; height: 0.35vw; position: absolute; top: 26.6vw; left: 59.2vw; background-color: green;'></div>
+        <div style = 'width: 5.2vw; height: 0.35vw; position: absolute; top: 26.6vw; left: 77.2vw; background-color: green;'></div>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

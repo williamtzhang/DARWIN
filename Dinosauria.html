@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Dinosauria')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Dinosauria">
+
+        <div class="arrow-1-c">
+            <a href="Amniota.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class="node-1-c">
+            <h3><a class="tooltip"  id="Dinosauria">Dinosauria</a></h3>
+            <p>
+                Dinosaur-Like
+            </p>
+        </div>
+
+        <div class="node-2-c">
+            <h3><a class="tooltip"  id="Saurischia">Saurischia</a></h3>
+            <p>
+                Bone Structure
+            </p>
+        </div>
+
+        <div class="node-3-c">
+            <h3><a class="tooltip"  id="Theropoda">Theropoda</a></h3>
+            <p>
+                Wishbone
+            </p>
+        </div>
+
+        <div class="node-4-c">
+            <h3><a class="tooltip"  id="Pennaraptora">Pennaraptora</a></h3>
+            <p>
+                Feathers
+            </p>
+        </div>
+
+        <div class="node-5-c">
+            <h3><a class="tooltip"  id="Avialae">Avialae</a></h3>
+            <p>
+                Flight
+            </p>
+        </div>
+
+        <div class="arrow-6-c">
+            <a href="Avialae.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-Dinosauria", "node-1-c", "node-2-c");
+            connectNode("page-Dinosauria", "node-2-c", "node-3-c");
+            connectNode("page-Dinosauria", "node-3-c", "node-4-c");
+            connectNode("page-Dinosauria", "node-4-c", "node-5-c");
+        </script>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

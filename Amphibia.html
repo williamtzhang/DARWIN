@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Amphibia')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Amphibia">
+
+        <div class="arrow-1-c">
+            <a href="Gnathostomata.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class="node-1-c">
+            <h3><a class="tooltip"  id="Amphibia">Amphibia</a></h3>
+            <p>
+                Absorbent Skin
+            </p>
+        </div>
+
+        <div class="node-3-d">
+            <h3><a class="tooltip"  id="Gymnophiona">Gymnophiona</a></h3>
+            <p>
+                Caecilians
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip"  id="Batrachia">Batrachia</a></h3>
+            <p>
+                Eye Movement
+            </p>
+        </div>
+
+        <div class="node-5-a">
+            <h3><a class="tooltip"  id="Caudata">Caudata</a></h3>
+            <p>
+                Salamanders
+            </p>
+        </div>
+
+        <div class="node-5-c">
+            <h3><a class="tooltip"  id="Anura">Anura</a></h3>
+            <p>
+                No Tail
+            </p>
+        </div>
+
+        <script>
+            connectNode("page-Amphibia", "node-1-c", "node-3-d");
+            connectNode("page-Amphibia", "node-1-c", "node-3-b");
+            connectNode("page-Amphibia", "node-3-b", "node-5-a");
+            connectNode("page-Amphibia", "node-3-b", "node-5-c");
+        </script>
+        <img src = "Anura.png" style = "width: 11vw; height: 11vw; position: absolute; top: 30vw; left: 60vw;">
+        <img src = "Caudata.png" style = "width: 11vw; height: 11vw; position: absolute; top: 20vw; left: 5vw;">
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

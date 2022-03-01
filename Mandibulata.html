@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Mandibulata')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Mandibulata">
+
+        <div class="arrow-1-c">
+            <a href="Protostomia.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class="node-1-c">
+            <h3><a class="tooltip" id="Mandibulata">Mandibulata</a></h3>
+            <p>
+                Mandibles
+            </p>
+        </div>
+
+        <div class = "node-2-c">
+            <h3><a class="tooltip" id="Pancrustacea">Pancrustacea</a></h3>
+            <p>
+                Different Eyes
+            </p>
+        </div>
+
+        <div class="node-2-d">
+            <h3><a class="tooltip" id="Myriapoda">Myriapoda</a></h3>
+            <p>
+                Millipedes & Centipede
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip" id="Malacostraca">Malacostraca</a></h3>
+            <p>
+                Shell
+            </p>
+        </div>
+
+        <div class="node-3-a-1">
+            <h3><a class="tooltip" id="Eucardia">Eucardia</a></h3>
+            <p>
+                Crabs, Lobsters, Shrimp
+            </p>
+        </div>
+        <div class="node-3-a-2">
+            <h3><a class="tooltip" id="Amphipoda">Amphipoda</a></h3>
+            <p>
+                Amphipods
+            </p>
+        </div>
+
+        <div class="node-3-a-3">
+            <h3><a class="tooltip" id="Isopala">Isopala</a></h3>
+            <p>
+                Isopods and Woodlice
+            </p>
+        </div>
+
+        <div class="node-3-c">
+            <h3><a class="tooltip" id="Hexapod">Hexapod</a></h3>
+            <p>
+                Six Legs
+            </p>
+        </div>
+
+        <div class="node-4-c">
+            <h3><a class="tooltip" id="Insecta">Insecta</a></h3>
+            <p>
+                Insects
+            </p>
+        </div>
+
+        <div class="node-5-b">
+            <h3><a class="tooltip" id="Zygentoma">Zygentoma</a></h3>
+            <p>
+                Silver Fish and Firebrats
+            </p>
+        </div>
+
+        <div class="node-5-c">
+            <h3><a class="tooltip" id="Pterygota">Pterygota</a></h3>
+            <p>
+                Flight
+            </p>
+        </div>
+
+        <div class="node-3-d" style = "width: 200px;">
+            <h3><a class="tooltip" id="Branchiopoda">Branchiopoda</a></h3>
+            <p>
+                Fairy Shrimp and Clam Shrimp
+            </p>
+        </div>
+
+        <div class="node-4-d">
+            <h3><a class="tooltip" id="Collembola">Collembola</a></h3>
+            <p>
+                Springtails
+            </p>
+        </div>
+
+        <div class="arrow-6-c">
+            <a href="Pterygota.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-Mandibulata", "node-1-c", "node-2-c");
+            connectNode("page-Mandibulata", "node-2-c", "node-3-b");
+            connectNode("page-Mandibulata", "node-3-b", "node-3-a-1");
+            connectNode("page-Mandibulata", "node-3-b", "node-3-a-2");
+            connectNode("page-Mandibulata", "node-3-b", "node-3-a-3");
+            connectNode("page-Mandibulata", "node-2-c", "node-3-c");
+            connectNode("page-Mandibulata", "node-3-c", "node-4-c");
+            connectNode("page-Mandibulata", "node-4-c", "node-5-b");
+            connectNode("page-Mandibulata", "node-4-c", "node-5-c");
+            connectNode("page-Mandibulata", "node-1-c", "node-2-d");
+            connectNode("page-Mandibulata", "node-2-c", "node-3-d");
+            connectNode("page-Mandibulata", "node-3-c", "node-4-d");
+        </script>
+
+        <img src = "Eucarida.png" style = "width: 11vw; height: 11vw; position: absolute; top: 3vw; left: 2vw;">
+        <img src = "Isopoda.png" style = "width: 11vw; height: 11vw; position: absolute; top: 25vw; left: 2vw;">
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

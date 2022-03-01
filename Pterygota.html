@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Pterygota')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Pterygota">
+
+        <div class="arrow-1-c">
+            <a href="Mandibulata.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class="node-1-c">
+            <h3><a class="tooltip" id="Pterygota">Pterygota</a></h3>
+            <p>
+                Flight
+            </p>
+        </div>
+
+        <div class = "node-2-b" style = "width: 12vw; left: 22vw;">
+            <h3><a class="tooltip" id="Odonata">Odonata</a></h3>
+            <p>
+                Damselflies and Dragonflies
+            </p>
+        </div>
+
+        <div class = "node-2-c">
+            <h3><a class="tooltip" id="Neoptera">Neoptera</a></h3>
+            <p>
+                Folding Wings
+            </p>
+        </div>
+
+        <div class="node-2-d">
+            <h3><a class="tooltip" id="Polyneoptera">Polyneoptera</a></h3>
+            <p style = "font-size: 0.8vw;">
+                No Metamorphosis & Outside Wings
+            </p>
+        </div>
+
+        <div class="node-2-e">
+            <h3><a class="tooltip" id="Orthoptera">Orthoptera</a></h3>
+            <p style = "font-size: 0.8vw;">
+                Grasshoppers, Crickets, Kaytidas
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip" id="Diptera">Diptera</a></h3>
+            <p style = "font-size: 0.8vw;">
+                True Flies, Mosquito, and Gnats
+            </p>
+        </div>
+
+        <div class="node-3-c">
+            <h3><a class="tooltip" id="Holometabola">Holometabola</a></h3>
+            <p style = "font-size: 0.8vw;">
+                Complete Metamorphosis
+            </p>
+        </div>
+
+        <div class="node-3-d">
+            <h3><a class="tooltip" id="Hemiptera">Hemiptera</a></h3>
+            <p style = "font-size: 0.8vw;">
+                True Bugs, Aphids, Cicadas, etc.
+            </p>
+        </div>
+
+        <div class="node-3-e">
+            <h3><a class="tooltip" id="Dictyoptera">Dictyoptera</a></h3>
+            <p style = "font-size: 0.8vw;">
+                Termites, Cockroaches, and Mantises
+            </p>
+        </div>
+
+        <div class="node-4-b" style = "width: 12vw; left: 22vw;">
+            <h3><a class="tooltip" id="Lepidoptera">Lepidoptera</a></h3>
+            <p>
+                Butterflies & Moths
+            </p>
+        </div>
+
+        <div class="node-4-c">
+            <h3><a class="tooltip" id="Coleoptera">Coleoptera</a></h3>
+            <p>
+                Beetles
+            </p>
+        </div>
+
+        <div class="node-4-d">
+            <h3><a class="tooltip" id="Hymenoptera">Hymenoptera</a></h3>
+            <p>
+                Ants, Bees, Wasps
+            </p>
+        </div>
+
+        <script>
+            connectNode("page-Pterygota", "node-1-c", "node-2-b");
+            connectNode("page-Pterygota", "node-1-c", "node-2-c");
+            connectNode("page-Pterygota", "node-2-c", "node-3-c");
+            connectNode("page-Pterygota", "node-2-c", "node-2-d");
+            connectNode("page-Pterygota", "node-2-c", "node-3-d");
+            connectNode("page-Pterygota", "node-2-d", "node-2-e");
+            connectNode("page-Pterygota", "node-2-d", "node-3-e");
+            connectNode("page-Pterygota", "node-3-b", "node-3-c");
+            connectNode("page-Pterygota", "node-3-c", "node-4-b");
+            connectNode("page-Pterygota", "node-3-c", "node-4-c");
+            connectNode("page-Pterygota", "node-3-c", "node-4-d");
+        </script>
+
+        <img src = "Odonata.png" style = "width: 11vw; height: 11vw; position: absolute; top: 3vw; left: 2vw;">
+        <img src = "Dictyoptera.png" style = "width: 11vw; height: 11vw; position: absolute; top: 25vw; left: 85vw;">
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

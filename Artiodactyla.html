@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Artiodactyla')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Artiodactyla">
+
+        <div class="arrow-1-c">
+            <a href="Laurasiatheria.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class = "node-1-c">
+            <h3><a class="tooltip" id="Artiodactyla">Artiodactyla</a></h3>
+            <p>
+                Even-Toed
+            </p>
+        </div>
+
+        <div class="node-2-a">
+            <h3><a class="tooltip"  id="Camelidae">Camelidae</a></h3>
+            <p>
+                Camels & Llamas
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip" id="Suidae">Suidae</a></h3>
+            <p>
+                Pigs & Peccaries
+            </p>
+        </div>
+
+        <div class="node-2-e">
+            <h3><a class="tooltip" id="Hippopotamidae">Hippopotamidae</a></h3>
+            <p>
+               Hippos
+            </p>
+        </div>
+
+        <div class="node-3-d" style = "width: 200px;">
+            <h3><a class="tooltip" id="Cetacea">Cetacea</a></h3>
+            <p>
+                Whales, Dolphins, Porpoises
+            </p>
+        </div>
+
+        <div class="node-4-c">
+            <h3><a class="tooltip" id="Ruminantia">Ruminantia</a></h3>
+            <p>
+                Chew Twice
+            </p>
+        </div>
+
+        <div class="node-5-b">
+            <h3><a class="tooltip" id="Giraffidae">Giraffidae</a></h3>
+            <p>
+                Giraffes & Okapis
+            </p>
+        </div>
+
+        <div class="node-5-c">
+            <h3><a class="tooltip" id="Cervidae">Cervidae</a></h3>
+            <p>
+                Deer & Moose
+            </p>
+        </div>
+
+        <div class="node-5-d" style = "width: 250px;">
+            <h3><a class="tooltip" id="Bovidae">Bovidae</a></h3>
+            <p>
+                Cows, Sheep, Bison, Antelope, Buffalo
+            </p>
+        </div>
+
+        <script>
+            connectNode("page-Artiodactyla", "node-1-c", "node-2-a");
+            connectNode("page-Artiodactyla", "node-1-c", "node-3-b");
+            connectNode("page-Artiodactyla", "node-1-c", "node-4-c");
+            connectNode("page-Artiodactyla", "node-4-c", "node-5-b");
+            connectNode("page-Artiodactyla", "node-4-c", "node-5-c");
+            connectNode("page-Artiodactyla", "node-4-c", "node-5-d");
+            connectNode("page-Artiodactyla", "node-1-c", "node-2-e");
+            connectNode("page-Artiodactyla", "node-1-c", "node-3-d");
+        </script>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

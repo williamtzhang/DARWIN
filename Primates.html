@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Primates')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Primates">
+
+        <div class="arrow-1-c">
+            <a href="Euarchontoglires.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class = "node-1-c">
+            <h3><a class="tooltip" id="Primates">Primates</a></h3>
+            <p>
+                Monkey-Like
+            </p>
+        </div>
+
+        <div class="node-2-c">
+            <h3><a class="tooltip"  id="Haplorrhini">Haplorrhini</a></h3>
+            <p>
+                Larger Primates
+            </p>
+        </div>
+
+        <div class="node-3-c">
+            <h3><a class="tooltip" id="Simiiformes">Simiiformes</a></h3>
+            <p>
+                Large Brain
+            </p>
+        </div>
+
+        <div class="node-4-b">
+            <h3><a class="tooltip" id="Platyrrhini">Platyrrhini</a></h3>
+            <p>
+               New World Monkeys
+            </p>
+        </div>
+
+        <div class="node-4-c">
+            <h3><a class="tooltip" id="Catarrhini">Catarrhini</a></h3>
+            <p>
+                Non-Prehensile Tails
+            </p>
+        </div>
+
+        <div class="node-5-d">
+            <h3><a class="tooltip" id="Cercopithecidae">Cercopithecidae</a></h3>
+            <p>
+                Old World Monkeys
+            </p>
+        </div>
+
+        <div class="node-5-c">
+            <h3><a class="tooltip" id="Hominoidea">Hominoidea</a></h3>
+            <p>
+                Apes
+            </p>
+        </div>
+
+    <div class="node-2-b">
+            <h3><a class="tooltip" id="Strepsirrhini">Strepsirrhini</a></h3>
+            <p>
+                Smaller Primates
+            </p>
+        </div>
+
+            <div class="node-3-a">
+            <h3><a class="tooltip" id="Lemuriformes">Lemuriformes</a></h3>
+            <p>
+                Lemurs
+            </p>
+        </div>
+
+            <div class="node-3-b">
+            <h3><a class="tooltip" id="Lorisiformes">Lorisiformes</a></h3>
+            <p>
+                Lorises & Bush Babies
+            </p>
+        </div>
+
+            <div class="node-3-d">
+            <h3><a class="tooltip" id="Tarsiiformes">Tarsiiformes</a></h3>
+            <p>
+                Tarsiers
+            </p>
+        </div>
+
+        <script>
+            connectNode("page-Primates", "node-1-c", "node-2-c");
+            connectNode("page-Primates", "node-1-c", "node-2-b");
+            connectNode("page-Primates", "node-2-b", "node-3-a");
+            connectNode("page-Primates", "node-2-b", "node-3-b");
+            connectNode("page-Primates", "node-2-c", "node-3-c");
+            connectNode("page-Primates", "node-2-c", "node-3-d");
+            connectNode("page-Primates", "node-3-c", "node-4-b");
+            connectNode("page-Primates", "node-3-c", "node-4-c");
+            connectNode("page-Primates", "node-4-c", "node-5-c");
+            connectNode("page-Primates", "node-4-c", "node-5-d");
+        </script>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

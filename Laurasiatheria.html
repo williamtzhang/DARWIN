@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Laurasiatheria')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Laurasiatheria">
+
+        <div class="arrow-1-c">
+            <a href="Eutheria.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class = "node-1-c">
+            <h3><a class="tooltip" id="Laurasiatheria">Laurasiatheria</a></h3>
+            <p>
+                Laurasia Origin
+            </p>
+        </div>
+
+        <div class="node-2-a">
+            <h3><a class="tooltip"  id="Perissodactyla">Perissodactyla</a></h3>
+            <p>
+                Odd-Toed
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip" id="Chiroptera">Chiroptera</a></h3>
+            <p>
+                Flight
+            </p>
+        </div>
+
+        <div class="node-2-e">
+            <h3><a class="tooltip" id="Pholidota">Pholidota</a></h3>
+            <p>
+                Pangolins
+            </p>
+        </div>
+
+        <div class="node-4-d">
+            <h3><a class="tooltip" id="Artiodactyla">Artiodactyla</a></h3>
+            <p>
+               Even-Toed
+            </p>
+        </div>
+
+        <div class="node-3-e">
+            <h3><a class="tooltip" id="Eulipotyphla">Eulipotyphla</a></h3>
+            <p>
+                Moles, Shrews, Hedgehogs
+            </p>
+        </div>
+
+        <div class="node-4-c">
+            <h3><a class="tooltip" id="Carnivora">Carnivora</a></h3>
+            <p>
+                Eat Meat
+            </p>
+        </div>
+
+        <div class="arrow-5-c">
+            <a href="Carnivora.html"><img src = "arrow-down.png"></a>
+        </div>
+        <div class="arrow-5-d">
+            <a href="Artiodactyla.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-Laurasiatheria", "node-1-c", "node-2-a");
+            connectNode("page-Laurasiatheria", "node-1-c", "node-2-e");
+            connectNode("page-Laurasiatheria", "node-1-c", "node-3-b");
+            connectNode("page-Laurasiatheria", "node-1-c", "node-3-e");
+            connectNode("page-Laurasiatheria", "node-1-c", "node-4-c");
+            connectNode("page-Laurasiatheria", "node-1-c", "node-4-d");
+
+        </script>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

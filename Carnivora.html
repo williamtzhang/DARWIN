@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Carnivora')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Carnivora">
+
+        <div class="arrow-1-c">
+            <a href="Laurasiatheria.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class = "node-1-c">
+            <h3><a class="tooltip" id="Carnivora">Carnivora</a></h3>
+            <p>
+                Eat Meat
+            </p>
+        </div>
+
+        <div class="node-2-d">
+            <h3><a class="tooltip"  id="Feliformia">Feliformia</a></h3>
+            <p>
+                Cat-Like
+            </p>
+        </div>
+
+        <div class="node-4-d">
+            <h3><a class="tooltip" id="Felidae">Felidae</a></h3>
+            <p>
+                Cats
+            </p>
+        </div>
+
+        <div class="node-5-e">
+            <h3><a class="tooltip" id="Pantherinae">Pantherinae</a></h3>
+            <p>
+               Big Cats
+            </p>
+        </div>
+
+        <div class="node-5-d">
+            <h3><a class="tooltip" id="Felinae">Felinae</a></h3>
+            <p>
+                Small Cats
+            </p>
+        </div>
+
+        <div class="node-3-c">
+            <h3><a class="tooltip" id="Hyaenidae">Hyaenidae</a></h3>
+            <p>
+                Hyenas
+            </p>
+        </div>
+
+        <div class="node-3-e">
+            <h3><a class="tooltip" id="Herpestidae">Herpestidae</a></h3>
+            <p>
+                Mongooses
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip" id="Caniformia">Caniformia</a></h3>
+            <p>
+                Dog-Like
+            </p>
+        </div>
+
+        <div class="node-3-a-1">
+            <h3><a class="tooltip" id="Canidae">Canidae</a></h3>
+            <p>
+                Dogs
+            </p>
+        </div>
+
+        <div class="node-3-a-2">
+            <h3><a class="tooltip" id="Ursidae">Ursidae</a></h3>
+            <p>
+                Bears
+            </p>
+        </div>
+
+        <div class="node-3-a-3">
+            <h3><a class="tooltip" id="Pinnipedia">Pinnipedia</a></h3>
+            <p style = "font-size: 0.9vw;">
+                Seal, Sea Lions, Walruses
+            </p>
+        </div>
+
+        <div class="node-5-b" style = "width: 260px; left: 245px;">
+            <h3><a class="tooltip" id="Musteloidea">Musteloidea</a></h3>
+            <p>
+                Weasels, Badgers, Wolverines, Otters
+            </p>
+        </div>
+
+        <script>
+            connectNode("page-Carnivora", "node-1-c", "node-3-b");
+            connectNode("page-Carnivora", "node-3-b", "node-3-a-1");
+            connectNode("page-Carnivora", "node-3-b", "node-3-a-2");
+            connectNode("page-Carnivora", "node-3-b", "node-3-a-3");
+            connectNode("page-Carnivora", "node-3-b", "node-5-b");
+            connectNode("page-Carnivora", "node-1-c", "node-2-d");
+            connectNode("page-Carnivora", "node-2-d", "node-3-c");
+            connectNode("page-Carnivora", "node-2-d", "node-3-e");
+            connectNode("page-Carnivora", "node-2-d", "node-4-d");
+            connectNode("page-Carnivora", "node-4-d", "node-5-d");
+            connectNode("page-Carnivora", "node-4-d", "node-5-e");
+        </script>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('LUCA')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-LUCA">
+
+        <div class="node-1-c" style = "width: 14vw; left: 42vw;">
+            <h3><a class="tooltip" id="LUCA">L.U.C.A.</a></h3>
+            <p>
+                Last Universal Common Ancestor
+            </p>
+        </div>
+
+        <div class="node-2-c">
+            <h3><a class="tooltip"  id="Amorphea">Amorphea</a></h3>
+            <p>
+                Single Flagellum
+            </p>
+        </div>
+
+        <div class="node-2-e">
+            <h3><a class="tooltip" id="Amoebozoa">Amoebozoa</a></h3>
+            <p>
+                Amoebas, Slime Molds
+            </p>
+        </div>
+
+        <div class="node-3-c" style = "width: 14vw; left: 42vw;">
+            <h3><a class="tooltip" id="Opisthokonta">Opisthokonta</a></h3>
+            <p>
+               Single Posterior Flagellum
+            </p>
+        </div>
+
+        <div class="node-4-c">
+            <h3><a class="tooltip" id="Metazoa">Metazoa</a></h3>
+            <p>
+                Animals
+            </p>
+        </div>
+
+        <div class="node-4-a">
+            <h3><a class="tooltip" id="Porifera">Porifera</a></h3>
+            <p>
+                Sponges
+            </p>
+        </div>
+
+        <div class="node-5-c"  id="node-Eumetazoa">
+            <h3><a class="tooltip" id="Eumetazoa" href="Eumetazoa.html">Eumetazoa</a></h3>
+            <p>
+                Nerves and Tissue
+            </p>
+        </div>
+
+        <div class="arrow-6-c">
+            <a href="Eumetazoa.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-LUCA", "node-1-c", "node-2-c");
+            connectNode("page-LUCA", "node-2-c", "node-2-e");
+            connectNode("page-LUCA", "node-2-c", "node-3-c");
+            connectNode("page-LUCA", "node-3-c", "node-4-c");
+            connectNode("page-LUCA", "node-4-a", "node-4-c");
+            connectNode("page-LUCA", "node-4-c", "node-5-c");
+        </script>
+
+        <img src = "Porifera.png" style = "width: 10vw; height: 10vw; position: absolute; top: 14vw; left: 2vw;">
+        <img src = "Amoebozoa.png" style = "width: 10vw; height: 10vw; position: absolute; top: 15vw; left: 85vw;">
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

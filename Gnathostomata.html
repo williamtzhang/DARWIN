@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Gnathostomata')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Gnathostomata">
+
+        <div class="arrow-1-c">
+            <a href="Deuterostomia.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class="node-1-c">
+            <h3><a class="tooltip" id="Gnathostomata">Gnathostomata</a></h3>
+            <p>
+                Jaws
+            </p>
+        </div>
+
+        <div class="node-2-d">
+            <h3><a class="tooltip"  id="Chondrichthyes">Chondrichthyes</a></h3>
+            <p>
+                Cartilage
+            </p>
+        </div>
+
+        <div class="node-2-c">
+            <h3><a class="tooltip"  id="Euteleostomi">Euteleostomi</a></h3>
+            <p>
+                Bones & Lungs
+            </p>
+        </div>
+
+        <div class="node-2-b">
+            <h3><a class="tooltip"  id="Actinopterygii">Actinopterygii</a></h3>
+            <p>
+                Ray Fins
+            </p>
+        </div>
+
+        <div class="node-3-a">
+            <h3><a class="tooltip"  id="Polypteriformes">Polypteriformes</a></h3>
+            <p>
+                Reedfish & Bichier
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip"  id="Actinopteri">Actinopteri</a></h3>
+            <p>
+                Ray Fins
+            </p>
+        </div>
+
+        <div class="node-4-a">
+            <h3><a class="tooltip"  id="Acipenseriformes">Acipenseriformes</a></h3>
+            <p>
+                Sturgeons & Paddlefis
+            </p>
+        </div>
+
+        <div class="node-4-b">
+            <h3><a class="tooltip"  id="Neopterygii">Neopterygii</a></h3>
+            <p>
+                Stronger Jaw
+            </p>
+        </div>
+
+        <div class="node-5-a">
+            <h3><a class="tooltip"  id="Holostei">Holostei</a></h3>
+            <p>
+                Gars & Bowfins
+            </p>
+        </div>
+
+        <div class="node-5-b">
+            <h3><a class="tooltip"  id="Teleostei">Teleostei</a></h3>
+            <p>
+                Fish, Fish, And More Fish
+            </p>
+        </div>
+
+        <div class="node-3-c">
+            <h3><a class="tooltip"  id="Sarcopterygii">Sarcopterygii</a></h3>
+            <p>
+                Lobed Fins
+            </p>
+        </div>
+
+        <div class="node-3-d">
+            <h3><a class="tooltip"  id="Latimeria">Latimeria</a></h3>
+            <p>
+                Coelacanths
+            </p>
+        </div>
+
+        <div class="node-4-c">
+            <h3><a class="tooltip"  id="Tetrapod">Tetrapod</a></h3>
+            <p>
+                Four Limbs
+            </p>
+        </div>
+
+        <div class="node-5-c">
+            <h3><a class="tooltip"  id="Amniota">Amniota</a></h3>
+            <p>
+                Shelled Egg
+            </p>
+        </div>
+
+        <div class="node-4-d">
+            <h3><a class="tooltip"  id="Dipnoi">Dipnoi</a></h3>
+            <p>
+                Lungfish
+            </p>
+        </div>
+
+        <div class="node-5-d">
+            <h3><a class="tooltip"  id="Amphibia">Amphibia</a></h3>
+            <p>
+                Absorbent Skin
+            </p>
+        </div>
+
+        <div class="arrow-6-c">
+            <a href="Amniota.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <div class="arrow-6-d">
+            <a href="Amphibia.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-Gnathostomata", "node-1-c", "node-2-c");
+            connectNode("page-Gnathostomata", "node-1-c", "node-2-d");
+            connectNode("page-Gnathostomata", "node-2-b", "node-2-c");
+            connectNode("page-Gnathostomata", "node-2-b", "node-3-b");
+            connectNode("page-Gnathostomata", "node-2-b", "node-3-a");
+            connectNode("page-Gnathostomata", "node-2-b", "node-3-b");
+            connectNode("page-Gnathostomata", "node-3-b", "node-4-a");
+            connectNode("page-Gnathostomata", "node-3-b", "node-4-b");
+            connectNode("page-Gnathostomata", "node-4-b", "node-5-a");
+            connectNode("page-Gnathostomata", "node-4-b", "node-5-b");
+            connectNode("page-Gnathostomata", "node-2-c", "node-3-c");
+            connectNode("page-Gnathostomata", "node-3-c", "node-3-d");
+            connectNode("page-Gnathostomata", "node-3-c", "node-4-d");
+            connectNode("page-Gnathostomata", "node-3-c", "node-4-c");
+            connectNode("page-Gnathostomata", "node-4-c", "node-5-c");
+            connectNode("page-Gnathostomata", "node-4-c", "node-5-d");
+        </script>
+        <img src = "Chondrichthyes.png" style = "width: 11vw; height: 11vw; position: absolute; top:10vw; left: 80vw;">
+        <img src = "Teleostei.png" style = "width: 11vw; height: 11vw; position: absolute; top: 3vw; left: 7vw;">
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

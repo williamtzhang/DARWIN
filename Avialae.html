@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Avialae')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Avialae">
+
+        <div class="arrow-1-c">
+            <a href="Dinosauria.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class = "node-1-c">
+            <h3><a class="tooltip" id="Avialae">Avialae</a></h3>
+            <p>
+                Flight
+            </p>
+        </div>
+
+        <div class="node-2-c">
+            <h3><a class="tooltip"  id="Aves">Aves</a></h3>
+            <p>
+                 Birds
+            </p>
+        </div>
+
+        <div class="node-3-b" style = "width: 14vw; left: 20vw;">
+            <h3><a class="tooltip" id="Palaeognathae">Palaeognathae</a></h3>
+            <p>
+                Ostriches, Emus, Kiwis, Tinamous
+            </p>
+        </div>
+
+        <div class="node-3-c">
+            <h3><a class="tooltip" id="Neognathae">Neognathae</a></h3>
+            <p>
+              New Jaws
+            </p>
+        </div>
+
+        <div class="node-4-d">
+            <h3><a class="tooltip" id="Galloanserae">Galloanserae</a></h3>
+            <p>
+                Fowls
+            </p>
+        </div>
+
+        <div class="node-5-b">
+            <h3><a class="tooltip" id="Neoaves">Neoaves</a></h3>
+            <p>
+                Main Bird Group
+            </p>
+        </div>
+
+        <div class="arrow-6-b">
+            <a href="Neoaves.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-Avialae", "node-1-c", "node-2-c");
+            connectNode("page-Avialae", "node-2-c", "node-3-b");
+            connectNode("page-Avialae", "node-2-c", "node-3-c");
+            connectNode("page-Avialae", "node-3-c", "node-4-d");
+            connectNode("page-Avialae", "node-3-c", "node-5-b");
+        </script>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

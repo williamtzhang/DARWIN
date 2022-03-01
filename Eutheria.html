@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Eutheria')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Eutheria">
+
+        <div class="arrow-1-c">
+            <a href="Mammalia.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class = "node-1-c">
+            <h3><a class="tooltip" id="Eutheria">Eutheria</a></h3>
+            <p>
+                African Mammals
+            </p>
+        </div>
+
+        <div class="node-2-b">
+            <h3><a class="tooltip"  id="Boreoeutheria">Boreoeutheria</a></h3>
+            <p>
+                Male Scrotum
+            </p>
+        </div>
+
+        <div class="node-5-a">
+            <h3><a class="tooltip" id="Laurasiatheria">Laurasiatheria</a></h3>
+            <p>
+                Laurasia Origin
+            </p>
+        </div>
+
+        <div class="node-5-b">
+            <h3><a class="tooltip" id="Euarchontoglires">Euarchontoglires</a></h3>
+            <p>
+               Common DNA Sequence
+            </p>
+        </div>
+
+        <div class="node-2-d">
+            <h3><a class="tooltip" id="Atlantogenata">Atlantogenata</a></h3>
+            <p>
+                African Descent
+            </p>
+        </div>
+
+        <div class="node-4-d">
+            <h3><a class="tooltip" id="Xenarthra">Xenarthra</a></h3>
+            <p>
+                Primitive Mammals
+            </p>
+        </div>
+
+        <div class="node-5-c">
+            <h3><a class="tooltip" id="Afrotheria">Afrotheria</a></h3>
+            <p>
+                African Mammals
+            </p>
+        </div>
+
+        <div class="node-5-d">
+            <h3><a class="tooltip" id="Cingulata">Cingulata</a></h3>
+            <p>
+                Armadillos
+            </p>
+        </div>
+
+        <div class="node-5-e">
+            <h3><a class="tooltip" id="Pilosa">Pilosa</a></h3>
+            <p>
+                Sloths & Anteaters
+            </p>
+        </div>
+
+        <div class="arrow-6-a">
+            <a href="Laurasiatheria.html"><img src = "arrow-down.png"></a>
+        </div>
+        <div class="arrow-6-b">
+            <a href="Euarchontoglires.html"><img src = "arrow-down.png"></a>
+        </div>
+        <div class="arrow-6-c">
+            <a href="Afrotheria.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-Eutheria", "node-1-c", "node-2-b");
+            connectNode("page-Eutheria", "node-2-b", "node-5-a");
+            connectNode("page-Eutheria", "node-2-b", "node-5-b");
+            connectNode("page-Eutheria", "node-1-c", "node-2-d");
+            connectNode("page-Eutheria", "node-2-d", "node-4-d");
+            connectNode("page-Eutheria", "node-4-d", "node-5-e");
+            connectNode("page-Eutheria", "node-4-d", "node-5-d");
+            connectNode("page-Eutheria", "node-2-d", "node-5-c");
+        </script>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

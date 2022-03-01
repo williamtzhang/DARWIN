@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Amniota')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Amniota">
+
+        <div class="arrow-1-c">
+            <a href="Gnathostomata.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class="node-1-c">
+            <h3><a class="tooltip"  id="Amniota">Amniota</a></h3>
+            <p>
+                Shelled Egg
+            </p>
+        </div>
+
+        <div class="node-2-e">
+            <h3><a class="tooltip"  id="Mammalia">Mammalia</a></h3>
+            <p>
+                Milk
+            </p>
+        </div>
+
+        <div class="node-2-c">
+            <h3><a class="tooltip"  id="Sauropsida">Sauropsida</a></h3>
+            <p>
+                Dry Scales
+            </p>
+        </div>
+
+        <div class="node-2-b">
+            <h3><a class="tooltip"  id="Lepidosauria">Lepidosauria</a></h3>
+            <p>
+                Detachable Tail
+            </p>
+        </div>
+
+        <div class="node-2-a">
+            <h3><a class="tooltip"  id="Rhynchocephalia">Rhynchocephalia</a></h3>
+            <p>
+                Tuataras
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip"  id="Squamata">Squamata</a></h3>
+            <p>
+                Movable Jaw Bone
+            </p>
+        </div>
+
+        <div class="node-3-a">
+            <h3><a class="tooltip"  id="Gekkota">Gekkota</a></h3>
+            <p>
+                Geckos
+            </p>
+        </div>
+
+        <div class="node-4-b">
+            <h3><a class="tooltip"  id="Unidentata">Unidentata</a></h3>
+            <p>
+                Single Egg-Tooth
+            </p>
+        </div>
+
+        <div class="node-5-a">
+            <h3><a class="tooltip"  id="Scincidae">Scincidae</a></h3>
+            <p>
+                Skinks
+            </p>
+        </div>
+
+        <div class="node-5-b">
+            <h3><a class="tooltip"  id="Episquamata">Episquamata</a></h3>
+            <p>
+                Possible Venom
+            </p>
+        </div>
+
+        <div class="node-3-c">
+            <h3><a class="tooltip"  id="Archelosauria">Archelosauria</a></h3>
+            <p>
+                Imbedded Teeth/Beak
+            </p>
+        </div>
+
+        <div class="node-3-d">
+            <h3><a class="tooltip"  id="Testudine">Testudine</a></h3>
+            <p>
+                Turtles
+            </p>
+        </div>
+
+        <div class="node-4-c">
+            <h3><a class="tooltip"  id="Archosauria">Archosauria</a></h3>
+            <p>
+                Skull Sockets
+            </p>
+        </div>
+
+        <div class="node-4-d" style = "width: 200px;">
+            <h3><a class="tooltip"  id="Crocodylia">Crocodylia</a></h3>
+            <p>
+                Crocodiles, Alligators, Gharials
+            </p>
+        </div>
+
+        <div class="node-5-c">
+            <h3><a class="tooltip"  id="Dinosauria">Dinosauria</a></h3>
+            <p>
+                Dinosaur-Like
+            </p>
+        </div>
+
+        <div class="arrow-3-e">
+            <a href="Mammalia.html"><img src = "arrow-down.png"></a>
+        </div>
+        <div class="arrow-6-b">
+            <a href="Episquamata.html"><img src = "arrow-down.png"></a>
+        </div>
+        <div class="arrow-6-c">
+            <a href="Dinosauria.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-Amniota", "node-1-c", "node-2-c");
+            connectNode("page-Amniota", "node-1-c", "node-2-e");
+            connectNode("page-Amniota", "node-2-b", "node-2-c");
+            connectNode("page-Amniota", "node-2-a", "node-2-b");
+            connectNode("page-Amniota", "node-2-b", "node-3-b");
+            connectNode("page-Amniota", "node-3-a", "node-3-b");
+            connectNode("page-Amniota", "node-3-b", "node-4-b");
+            connectNode("page-Amniota", "node-4-b", "node-5-a");
+            connectNode("page-Amniota", "node-4-b", "node-5-b");
+            connectNode("page-Amniota", "node-2-c", "node-3-c");
+            connectNode("page-Amniota", "node-3-c", "node-3-d");
+            connectNode("page-Amniota", "node-3-c", "node-4-c");
+            connectNode("page-Amniota", "node-4-c", "node-4-d");
+            connectNode("page-Amniota", "node-4-c", "node-5-c");
+        </script>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

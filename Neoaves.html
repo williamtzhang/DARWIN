@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Neoaves')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Neoaves">
+
+        <div class="arrow-1-c">
+            <a href="Avialae.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class = "node-1-c">
+            <h3><a class="tooltip" id="Neoaves">Neoaves</a></h3>
+            <p>
+                Main Bird Group
+            </p>
+        </div>
+
+        <div class="node-2-a">
+            <h3><a class="tooltip" id="Australaves">Australaves</a></h3>
+            <p style = "font-size: 0.9vw;">
+                Parrots, Falcons, Songbirds
+            </p>
+        </div>
+
+        <div class="node-3-a">
+            <h3><a class="tooltip"  id="Mirandornithes">Mirandornithes</a></h3>
+            <p>
+                 Flamingos & Grebes
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip" id="Columbimorphae">Columbimorphae</a></h3>
+            <p>
+                Pigeons, Doves, Grouses
+            </p>
+        </div>
+
+        <div class="node-3-c">
+            <h3><a class="tooltip" id="Gruiformes">Gruiformes</a></h3>
+            <p>
+              Cranes & Rails
+            </p>
+        </div>
+
+        <div class="node-3-d">
+            <h3><a class="tooltip" id="Aequornithes">Aequornithes</a></h3>
+            <p>
+                Water Birds
+            </p>
+        </div>
+
+        <div class="node-2-e">
+            <h3><a class="tooltip" id="Accipitrimorphae">Accipitrimorphae</a></h3>
+            <p>
+                Most Birds of Prey
+            </p>
+        </div>
+
+        <div class="node-3-e">
+            <h3><a class="tooltip" id="Strigiformes">Strigiformes</a></h3>
+            <p>
+                Owls
+            </p>
+        </div>
+
+        <script>
+            connectNode("page-Neoaves", "node-1-c", "node-2-a");
+            connectNode("page-Neoaves", "node-1-c", "node-3-a");
+            connectNode("page-Neoaves", "node-1-c", "node-3-b");
+            connectNode("page-Neoaves", "node-1-c", "node-3-c");
+            connectNode("page-Neoaves", "node-1-c", "node-3-d");
+            connectNode("page-Neoaves", "node-1-c", "node-3-e");
+            connectNode("page-Neoaves", "node-1-c", "node-2-e");
+
+        </script>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

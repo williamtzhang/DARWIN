@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Eumetazoa')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Eumetazoa">
+
+        <div class="arrow-1-c">
+            <a href="LUCA.html"><img src = "arrow-up.png"></a>
+        </div>
+
+       <div class = "node-1-c">
+            <h3><a class="tooltip" id="Eumetazoa" href="LUCA.html">Eumetazoa</a></h3>
+            <p>
+                Nerves and Tissue
+            </p>
+        </div>
+
+        <div class="node-2-a">
+            <h3><a class="tooltip" id="Ctenophora">Ctenophora</a></h3>
+            <p>
+              Comb Jellies
+            </p>
+        </div>
+
+        <div class="node-3-b">
+            <h3><a class="tooltip" id="Cnidaria">Cnidaria</a></h3>
+            <p>
+                Stinging Cells
+            </p>
+        </div>
+
+        <div class="node-2-d">
+            <h3><a class="tooltip" id="Bilateria">Bilateria</a></h3>
+            <p>
+                Bilateral Symmetry
+            </p>
+        </div>
+
+        <div class="node-2-e">
+            <h3><a class="tooltip" id="Acoela">Acoela</a></h3>
+            <p>
+                Acoels
+            </p>
+        </div>
+
+        <div class="node-4-a">
+            <h3><a class="tooltip" id="Medusozoa">Medusozoa</a></h3>
+            <p>
+                Jellyfish and Hydras
+            </p>
+        </div>
+
+        <div class="node-4-b">
+            <h3><a class="tooltip" id="Anthozoa">Anthozoa</a></h3>
+            <p>
+                Coral and Anemones
+            </p>
+        </div>
+
+        <div class="node-3-d">
+            <h3><a class="tooltip" id="Nephrozoa">Nephrozoa</a></h3>
+            <p>
+                More Complex Organs
+            </p>
+        </div>
+
+        <div class="node-4-c">
+            <h3><a class="tooltip" id="Protostomia">Protostomia</a></h3>
+            <p>
+                Blastopore into Mouth
+            </p>
+        </div>
+
+        <div class="node-4-d">
+            <h3><a class="tooltip" id="Deuterostomia">Deuterostomia</a></h3>
+            <p>
+                Blastopore into Anus
+            </p>
+        </div>
+
+        <div class="arrow-5-c">
+            <a href="Protostomia.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <div class="arrow-5-d">
+            <a href="Deuterostomia.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-Eumetazoa", "node-1-c", "node-2-a");
+            connectNode("page-Eumetazoa", "node-1-c", "node-3-b");
+            connectNode("page-Eumetazoa", "node-3-b", "node-4-a");
+            connectNode("page-Eumetazoa", "node-3-b", "node-4-b");
+            connectNode("page-Eumetazoa", "node-1-c", "node-2-d");
+            connectNode("page-Eumetazoa", "node-2-d", "node-2-e");
+            connectNode("page-Eumetazoa", "node-2-d", "node-3-d");
+            connectNode("page-Eumetazoa", "node-3-d", "node-4-c");
+            connectNode("page-Eumetazoa", "node-3-d", "node-4-d");
+        </script>
+
+        <img src = "Medusozoa.png" style = "width: 10vw; height: 10vw; position: absolute; top: 30vw; left: 2vw;">
+        <img src = "Anthozoa.png" style = "width: 10vw; height: 10vw; position: absolute; top: 30vw; left: 20vw;">
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 

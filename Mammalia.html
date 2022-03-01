@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" media="screen"/>
+    <title>D.A.R.W.I.N</title>
+</head>
+
+<body onload = "myFadein('Mammalia')">
+
+<script src="transition.js"></script>
+
+<div class = "div" id = "container">
+
+    <div class="div" id = "page-Mammalia">
+
+        <div class="arrow-1-c">
+            <a href="Amniota.html"><img src = "arrow-up.png"></a>
+        </div>
+
+        <div class = "node-1-c">
+            <h3><a class="tooltip" id="Mammalia">Mammalia</a></h3>
+            <p>
+                Milk
+            </p>
+        </div>
+
+        <div class="node-2-e">
+            <h3><a class="tooltip"  id="Monotremata">Monotremata</a></h3>
+            <p>
+                 Egg Laying Mammal
+            </p>
+        </div>
+
+        <div class="node-3-d" style ="width: 14vw; left: 63vw;">
+            <h3><a class="tooltip" id="Ornithorhynchidae">Ornithorhynchidae</a></h3>
+            <p>
+                Platypus
+            </p>
+        </div>
+
+        <div class="node-3-e">
+            <h3><a class="tooltip" id="Tachyglossidae">Tachyglossidae</a></h3>
+            <p>
+              Echidnas
+            </p>
+        </div>
+
+        <div class="node-2-c">
+            <h3><a class="tooltip" id="Theria">Theria</a></h3>
+            <p>
+                External Ears
+            </p>
+        </div>
+
+        <div class="node-5-b">
+            <h3><a class="tooltip" id="Marsupialia">Marsupialia</a></h3>
+            <p>
+                Pouch
+            </p>
+        </div>
+
+        <div class="node-5-c">
+            <h3><a class="tooltip" id="Eutheria">Eutheria</a></h3>
+            <p>
+                 Longer Pregnancy
+            </p>
+        </div>
+
+        <div class="arrow-6-b">
+            <a href="Marsupialia.html"><img src = "arrow-down.png"></a>
+        </div>
+        <div class="arrow-6-c">
+            <a href="Eutheria.html"><img src = "arrow-down.png"></a>
+        </div>
+
+        <script>
+            connectNode("page-Mammalia", "node-1-c", "node-2-e");
+            connectNode("page-Mammalia", "node-2-e", "node-3-d");
+            connectNode("page-Mammalia", "node-2-e", "node-3-e");
+            connectNode("page-Mammalia", "node-1-c", "node-2-c");
+            connectNode("page-Mammalia", "node-2-c", "node-5-b");
+            connectNode("page-Mammalia", "node-2-c", "node-5-c");
+        </script>
+
+    </div>
+
+</div>
+
+<script src="tooltips.js"></script>
+
+</body>
+
+</html> 
